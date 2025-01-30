@@ -1,0 +1,168 @@
+/* Reset styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Softer background color */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    transform: translateY(-50px);
+}
+
+
+/* Heading styles */
+h2 {
+    font-size: 26px; /* Slightly larger font size for emphasis */
+    color: #333;
+    margin-top: 0px;
+    margin-bottom: 20px; /* Adjusted spacing for better balance */
+    font-weight: bold; /* Emphasize the heading */
+}
+
+/* Form container styles */
+form {
+    background-color: #ffffff;
+    padding: 20px; /* Ample padding for a clean look */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for better elevation */
+    text-align: left;
+    width: 270px; /* Optimal width for readability */
+    margin-top: 10px;
+}
+
+/* Label and input styles */
+label {
+    font-size: 12px; /* Slightly larger for better readability */
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; /* Emphasize labels */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Balanced spacing between inputs */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 13px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+    outline: none;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 10px; /* Add padding for the toggle icon */
+}
+
+.password-container span {
+    position: absolute;
+    right: 10px; /* Position near the right edge */
+    top: 50%;
+    padding-bottom: 13px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px; /* Adjust size for better visibility */
+    color: #0077cc; /* Match with other interactive elements */
+    transition: color 0.3s ease;
+}
+
+.password-container span:hover {
+    color: #005fa3; /* Change color on hover */
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Vibrant green for success */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+     border: none; 
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: scale(1.02); /* Subtle scaling effect */
+}
+
+button:active {
+    transform: scale(0.98); /* Slightly reduce size on click */
+}
+
+/* Styling for 'Forgot Password' and other links */
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.line a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:11px ;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.line a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+/* Styling the account-link section */
+.account-link {
+    font-size: 14px;
+    color: #333;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.account-link a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.account-link a:hover {
+    color: #005fa3;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById("password");
+            const toggleIcon = document.getElementById("toggle-password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.textContent = "🙈"; // Change to hide icon
+            } else {
+                passwordInput.type = "password";
+                toggleIcon.textContent = "👁️"; // Change to show icon
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Sign In to MindMaze</h2>
+        <form id="login-form">
+            <label for="username">Username or Email Address</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+            
+            <div class="line">
+                <label for="password">Password</label>
+                <a href="forgot.html">Forgot Password?</a>
+            </div>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span id="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+            </div>
+            
+            <button type="submit">Sign In</button>
+            
+            <p class="account-link">
+                New to the platform? <a href="registration.html">Create an Account</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
